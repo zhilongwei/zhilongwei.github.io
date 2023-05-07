@@ -3,7 +3,6 @@ layout: post
 title: A double pendulum subjected to a follower load
 date: 2023-04-07
 description: Numerical implementation of the stability analysis of a follower force system.
-tags: Mechanics
 categories: numerical-implementation
 related_posts: false
 ---
