@@ -6,7 +6,6 @@ description: Numerical implementation of the stability analysis of a follower fo
 tags: Stability
 categories: numerical-implementation
 related_posts: false
-bibliography: bibliography.bib
 ---
 
 ## Governing equations
