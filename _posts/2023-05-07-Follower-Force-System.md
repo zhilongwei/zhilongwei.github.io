@@ -113,7 +113,7 @@ Introducing the transformation $$\boldsymbol{\varphi}=\boldsymbol{A}\boldsymbol{
 \begin{equation}
 \boldsymbol{y} = \boldsymbol{D}\dot{\boldsymbol{y}}
 \end{equation}
-where $$\boldsymbol{D}=\boldsymbol{P}^{-1}\boldsymbol{S}$$ is diagonal, $$\boldsymbol{P}=\tilde{\boldsymbol{A}}^T\boldsymbol{B}\boldsymbol{A}$$, and $$\boldsymbol{S}=\tilde{\boldsymbol{A}}^T\boldsymbol{E}\boldsymbol{A}$$.
+where $$\boldsymbol{D}=\boldsymbol{P}^{-1}\boldsymbol{S}$$ is diagonal, $$\boldsymbol{P}=\tilde{\boldsymbol{A}}^T\boldsymbol{B}\boldsymbol{A}$$, and $$\boldsymbol{S}=-\tilde{\boldsymbol{A}}^T\boldsymbol{E}\boldsymbol{A}$$.
 
 Using the model matrix $$\boldsymbol{A}$$ and the coordinate transformation, is is then possible to calculate the solution at any time in the original coordinates, $$\phi_1$$ and $$\phi_2$$.
 
@@ -196,7 +196,7 @@ A2   = A2[:, ind2]
 ## decoupled problem
 P = A2.T * B * A1
 S = A2.T * E * A1
-D = np.diag(np.linalg.inv(P) * S)
+D = np.diag(-np.linalg.inv(P) * S)
 
 # define initial conditions
 ## For example, the double pendulum is released from static horizontal position
