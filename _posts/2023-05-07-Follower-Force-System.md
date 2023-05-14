@@ -35,55 +35,55 @@ the dimensionless governing equation will be
 \end{equation}
 where
 
-$$
-\boldsymbol{M} = 
+\begin{equation}
+\boldsymbol{M} =
 \begin{bmatrix}
-3 & 1\\
+3 & 1 \newline
 1 & 1
 \end{bmatrix},\quad
-\boldsymbol{C} = 
+\boldsymbol{C} =
 \begin{bmatrix}
-\gamma_1 + \gamma_2 & -\gamma_2\\
+\gamma_1 + \gamma_2 & -\gamma_2 \newline
 -\gamma_2 & \gamma_2
 \end{bmatrix},\quad
-\boldsymbol{K} = 
+\boldsymbol{K} =
 \begin{bmatrix}
-2 - p & p - 1\\
+2 - p & p - 1 \newline
 -1 & 1
 \end{bmatrix}
-$$
+\end{equation}
 
 and
 
-$$
-\boldsymbol{\phi} = 
+\begin{equation}
+\boldsymbol{\phi} =
 \begin{bmatrix}
-\phi_1 \\
-\phi_2
+    \phi_1 \newline
+    \phi_2
 \end{bmatrix}
-$$
+\end{equation}
 
 Now it is clear that the system is defined by three parameters, the two nondimensional dmaping coefficients, $$\gamma_1$$ and $$\gamma_2$$, and the nondimensional follower force, $$p$$.
 
 Furthermore, defining the following partitioned vector and matrices of order $$4$$
 
-$$
-\boldsymbol{\varphi} = 
+\begin{equation}
+\boldsymbol{\varphi} =
 \begin{bmatrix}
-\dot{\boldsymbol{\phi}}\\
+\dot{\boldsymbol{\phi}} \newline
 \boldsymbol{\phi}
 \end{bmatrix},\quad
-\boldsymbol{B} = 
+\boldsymbol{B} =
 \begin{bmatrix}
-\boldsymbol{0} & \boldsymbol{M} \\
-\boldsymbol{M} & \boldsymbol{C} 
+\boldsymbol{0} & \boldsymbol{M} \newline
+\boldsymbol{M} & \boldsymbol{C}
 \end{bmatrix},\quad
-\boldsymbol{E} = 
+\boldsymbol{E} =
 \begin{bmatrix}
--\boldsymbol{M} & \boldsymbol{0} \\
-\boldsymbol{0} & \boldsymbol{K} 
+-\boldsymbol{M} & \boldsymbol{0} \newline
+\boldsymbol{0} & \boldsymbol{K}
 \end{bmatrix}
-$$
+\end{equation}
 
 the problem reduces into the first-order form
 \begin{equation}
