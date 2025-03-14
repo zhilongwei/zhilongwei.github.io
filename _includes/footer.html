@@ -1,0 +1,37 @@
+<!-- Footer with Social Media Icons -->
+<footer class="footer">
+    <div class="social-icons">
+        {% if site.social.github %}
+        <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if site.social.orcid %}
+        <a href="{{ site.social.orcid }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-orcid"></i>
+        </a>
+        {% endif %}
+        {% if site.social.linkedin %}
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if site.social.google_scholar %}
+        <a href="{{ site.social.google_scholar }}" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-graduation-cap"></i>
+        </a>
+        {% endif %}
+        {% if site.social.researchgate %}
+        <a href="{{ sitesocial.researchgate }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-researchgate"></i>
+        </a>
+        {% endif %}
+    </div>
+    <p class="footer-info">
+        &copy; {{ "now" | date: "%Y" }} {{ site.contact.name }}. Powered by <a href="https://jekyllrb.com"
+            target="_blank" rel="noopener noreferrer">Jekyll</a>.
+        Content is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+            CC BY-NC-SA 4.0
+    </p>
+</footer>

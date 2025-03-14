@@ -1,0 +1,38 @@
+<!-- _includes/research.html -->
+<div class="section research">
+    <h2>Research Experience</h2>
+    {% for item in site.data.research %}
+    {% if item.position %}
+    <!-- Line 1: Position (left), Year (right) -->
+    <div class="flex-line">
+        <b>{{ item.position }}</b>
+        <span>{{ item.year }}</span>
+    </div>
+    <!-- Line 2: Institution -->
+    <div class="flex-line">
+        <span>{{ item.institution }}</span>
+    </div>
+    <!-- Optional Project line -->
+    {% if item.project %}
+    <div style="margin-top: 0.3em; margin-left: 0em;">
+        · Project: {{ item.project }}
+    </div>
+    {% endif %}
+    <!-- Optional Supervisor line with bullet, single vs. multiple -->
+    {% if item.supervisor %}
+    {% assign sups = item.supervisor | split: "," %}
+    {% if sups.size > 1 %}
+    <!-- More than one supervisor -->
+    <div style="margin-top: 0.3em; margin-left: 0em;">
+        · Supervisors: {{ item.supervisor }}
+    </div>
+    {% else %}
+    <!-- Only one supervisor -->
+    <div style="margin-top: 0.3em; margin-left: 0em;">
+        · Supervisor: {{ item.supervisor }}
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</div>

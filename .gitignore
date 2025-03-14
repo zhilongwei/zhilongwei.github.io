@@ -1,0 +1,51 @@
+# Ignore dependencies
+.bundle/
+vendor/
+Gemfile.lock
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Ignore logs and temporary files
+log/
+tmp/
+*.log
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# Ignore system files
+*.pid
+*.gem
+*.rbc
+*.so
+*.o
+*.out
+
+# Ignore local environment files
+.env
+config.yml~
+node_modules/
+
+# Ignore Docker-related files
+docker-compose.yml
+
+# Ignore compiled assets (optional)
+assets/css/*.map
+assets/js/*.map
+
+# Ignore BibTeX auxiliary files (if using LaTeX for citations)
+.bbl
+.blg
+.aux
+*.lof
+*.lot
+*.toc
+
+# Keep VSCode settings and devcontainer (ensure portability)
+!.vscode/
+!.devcontainer/

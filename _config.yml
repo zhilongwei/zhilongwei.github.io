@@ -1,0 +1,42 @@
+title: Zhilong Wei
+description: Zhilong's curriculum vitae
+
+baseurl: ""
+url: "https://zhilongwei.github.io"
+
+# -----------------------------------------------------------------------------
+# Contact Information
+# -----------------------------------------------------------------------------
+contact:
+  name: "Zhilong Wei"
+  address: "Koppels Allé, Building 403, 2800 Kgs. Lyngby, Denmark"
+  phone: "+45 45251909"
+  email: "zhilwei@dtu.dk"
+
+# -----------------------------------------------------------------------------
+# About Me
+# -----------------------------------------------------------------------------
+
+mydescription: "I am a PhD candidate at the Technical University of Denmark (DTU). My research interests include wave-vegeation interaction, wave attenuation by vegetatoin, two-phase flow, and computational fluid dynamics (CFD)."
+
+# -----------------------------------------------------------------------------
+# Social Accounts
+# -----------------------------------------------------------------------------
+social:
+  # linkedin: ""
+  # google_scholar: ""
+  # researchgate: ""
+  orcid: "https://orcid.org/0000-0002-5880-287X"
+  github: "https://github.com/zhilongwei"
+
+plugins:
+  - jekyll-scholar
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+scholar:
+  style: assets/csl/apa-no-doi.csl
+  source: ./_bibliography
+  sort_by: year
+  order: descending

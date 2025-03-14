@@ -1,0 +1,14 @@
+<div class="honors">
+    <h2>Honors</h2>
+    {% for item in site.data.honors %}
+    {% if item.award %}
+    <div class="honor-entry">
+        <!-- One line: award on the left, year on the right -->
+        <div class="flex-line">
+            <span>{{ item.award }}</span>
+            <span>{{ item.year }}</span>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

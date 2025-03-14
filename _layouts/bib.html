@@ -1,0 +1,15 @@
+---
+---
+{% if (entry.type == 'inproceedings' or entry.type == 'conference') and entry.url %}
+<a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer" style="color: #1e90ff;">
+    {{ reference | replace_first: 'Wei, Z.', '<b>Wei, Z.</b>' }}
+</a>
+{% else %}
+{{ reference | replace_first: 'Wei, Z.', '<b>Wei, Z.</b>' }}
+{% endif %}
+
+{% if entry.doi %}
+doi: <a class="doi-link" href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener noreferrer">
+    {{ entry.doi }}
+</a>
+{% endif %}

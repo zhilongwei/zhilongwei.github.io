@@ -1,0 +1,24 @@
+{
+    "name": "Jekyll Development",
+    "image": "jekyll-scholar",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "shopify.ruby-lsp",
+                "bung87.rails",
+                "DavidAnson.vscode-markdownlint",
+                "eamodio.gitlens",
+                "donjayamanne.githistory"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "ruby.useLanguageServer": true
+            }
+        }
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root"
+}

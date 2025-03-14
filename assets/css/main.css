@@ -1,0 +1,107 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Remove bullets and left indent from lists in each section */
+.section ul {
+    list-style-type: none;
+    /* Removes the default bullet */
+    padding-left: 0;
+    /* Removes the default left indentation */
+    margin: 0;
+    /* Optional: may help remove extra spacing */
+}
+
+h1{
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 0.1em;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.pub-item {
+    margin-bottom: 10px;
+}
+
+.publications ol {
+    list-style: none;   /* Remove numbering */
+    margin-left: 0;
+    padding-left: 0;
+}
+  
+.publications ol li {
+    /* Remove any extra padding or text indent */
+    padding-left: 0;
+    text-indent: 0;
+}
+
+.publications ul li {
+    margin-bottom: 0.3em; /* Adjust the value as needed */
+}
+
+/* Flex-line helper class: aligns two items at opposite ends */
+.flex-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3em 0;
+    /* small spacing between lines (optional) */
+}
+
+/* Footer styling for social icons at the bottom */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 28px;
+    color: #aaa;
+}
+
+.footer .social-icons a:hover {
+    color: #0073e6;
+}
+
+.footer-info {
+    font-size: 0.8em;
+    color: #9c9b9b;
+    margin: 5px 0;
+}
+
+a.doi-link {
+    word-break: break-all;      /* Breaks long words when needed */
+    overflow-wrap: break-word;  /* Ensures the content wraps nicely */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - {{ site.contact.name }}</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.min.css" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <!-- Include main CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+</head>
+
+<body>
+    <div class="container">
+        {% include contact.html %}
+        {% include about.html %}
+        {% include education.html %}
+        {% include research.html %}
+        {% include publications.html %}
+        {% include conferences.html %}
+        {% include honors.html %}
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>

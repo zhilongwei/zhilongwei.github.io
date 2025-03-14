@@ -1,0 +1,33 @@
+<!-- _includes/education.html -->
+<div class="section education">
+    <h2>Education</h2>
+    <ul>
+        {% for item in site.data.education %}
+        {% if item.degree %}
+        <li>
+            <!-- Degree Entry: Two lines, each with left/right alignment -->
+            <div>
+                <!-- Line 1: Degree on left, Year on right -->
+                <div class="flex-line">
+                    <b>{{ item.degree }}</b>
+                    <span>{{ item.year }}</span>
+                </div>
+                <!-- Line 2: Institution on left, City on right (if city exists) -->
+                <div class="flex-line">
+                    <span>{{ item.institution }}</span>
+                    {% if item.city %}
+                    <span>{{ item.city }}</span>
+                    {% endif %}
+                </div>
+                <!-- OPTIONAL: Thesis line (only shown if `thesis` is present in the YAML) -->
+                {% if item.thesis %}
+                <div style="margin-top: 0.3em; margin-left: 0em;">
+                    Thesis: {{ item.thesis }}
+                </div>
+                {% endif %}
+            </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
