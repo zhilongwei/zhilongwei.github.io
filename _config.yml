@@ -38,5 +38,7 @@ plugins:
 scholar:
   style: assets/csl/apa-no-doi.csl
   source: ./_bibliography
+  bibliography: publications.bib
   sort_by: year
   order: descending
+  bibliography_template: bib
