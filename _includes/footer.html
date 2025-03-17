@@ -22,16 +22,19 @@
         </a>
         {% endif %}
         {% if site.social.researchgate %}
-        <a href="{{ sitesocial.researchgate }}" target="_blank" rel="noopener noreferrer">
+        <a href="{{ site.social.researchgate }}" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-researchgate"></i>
         </a>
         {% endif %}
     </div>
     <p class="footer-info">
         &copy; {{ "now" | date: "%Y" }} {{ site.contact.name }}. Powered by <a href="https://jekyllrb.com"
-            target="_blank" rel="noopener noreferrer">Jekyll</a>.
+            target="_blank" rel="noopener noreferrer">Jekyll</a> with <a
+            href="https://github.com/zhilongwei/academiccv-jekyll" target="_blank" rel="noopener noreferrer">
+            academiccv-jekyll</a> theme.
         Content is licensed under
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
             CC BY-NC-SA 4.0
+        </a>
     </p>
 </footer>
