@@ -13,12 +13,23 @@
                     <span>{{ item.year }}</span>
                 </div>
                 <!-- Line 2: Institution on left, City on right (if city exists) -->
+                {% if item.institutions %}
+                {% for inst in item.institutions %}
+                <div class="flex-line">
+                    <span>{{ inst.institution }}</span>
+                    {% if inst.city %}
+                    <span>{{ inst.city }}</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                {% else %}
                 <div class="flex-line">
                     <span>{{ item.institution }}</span>
                     {% if item.city %}
                     <span>{{ item.city }}</span>
                     {% endif %}
                 </div>
+                {% endif %}
                 <!-- OPTIONAL: Thesis line (only shown if `thesis` is present in the YAML) -->
                 {% if item.thesis %}
                 <div style="margin-top: 0.3em; margin-left: 0em;">

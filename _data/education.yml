@@ -1,7 +1,10 @@
 - degree: "Ph.D."
   year: "2021–2025"
-  institution: "Technical University of Denmark"
-  city: "Kgs. Lyngby, Denmark"
+  institutions:
+  - institution: "Technical University of Denmark"
+    city: "Kgs. Lyngby, Denmark"
+  - institution: "Norwegian University of Science and Technology"
+    city: "Trondheim, Norway"
   thesis: "Experimental and Theoretical Investigations of Hydrodynamic Loads on Cultivated Seaweeds and Their Structural Responses"
 - degree: "M.S. in Harbor, Coastal and Offshore Engineering"
   year: "2018–2021"
