@@ -1,11 +1,15 @@
 ---
 ---
+{% assign myname = site.scholar.apashort %}
+
+{% capture boldname %}<b>{{ myname }}</b>{% endcapture %}
+
 {% if (entry.type == 'inproceedings' or entry.type == 'conference') and entry.url %}
 <a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer" style="color: #1e90ff;">
-    {{ reference | replace_first: 'Wei, Z.', '<b>Wei, Z.</b>' }}
+    {{ reference | replace_first: myname, boldname | safe }}
 </a>
 {% else %}
-{{ reference | replace_first: 'Wei, Z.', '<b>Wei, Z.</b>' }}
+{{ reference | replace_first: myname, boldname | safe }}
 {% endif %}
 
 {% if entry.doi %}

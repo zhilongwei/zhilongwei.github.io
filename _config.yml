@@ -37,6 +37,7 @@ plugins:
 # -----------------------------------------------------------------------------
 scholar:
   style: assets/csl/apa-no-doi.csl
+  apashort: "Wei, Z."
   source: ./_bibliography
   bibliography: publications.bib
   sort_by: year
