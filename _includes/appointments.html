@@ -1,0 +1,25 @@
+<!-- _includes/appointments.html -->
+<div class="section appointments">
+    <h2>Appointment</h2>
+    <ul>
+        {% for item in site.data.appointments %}
+        {% if item.appointment %}
+        <li>
+            <div>
+                <!-- Line 1: Appointment on left, Year on right -->
+                <div class="flex-line">
+                    <b>{{ item.appointment }}</b>
+                    <span>{{ item.year }}</span>
+                </div>
+                <!-- Line 2: Workplace on left, City on right (if city exists) -->
+                {% if item.workplace %}
+                <div class="flex-line">
+                    {{ item.workplace }} <span>{{ item.city }}</span>
+                </div>
+                {% endif %}
+            </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
