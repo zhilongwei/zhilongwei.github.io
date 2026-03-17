@@ -1,6 +1,6 @@
 # Zhilong Wei's Website
 
-This is my personal website, which is hosted at <https://github.com/zhilongwei/zhilongwei.github.io>.
+This is my personal website, which is hosted at <https://zhilongwei.github.io/>.
 
 ## License
 
