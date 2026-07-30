@@ -51,7 +51,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           # Tell deploy-pages which artifact to deploy
           artifact_name: site-artifact
