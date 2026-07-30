@@ -36,7 +36,7 @@ jobs:
 
       # *** Upload _site using the new artifact action ***
       - name: Upload built site
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           name: site-artifact  # give the artifact a name
           path: _site          # path to your built site
