@@ -15,8 +15,8 @@ RUN apt-get clean && \
 # set the working directory
 WORKDIR /workspace
 
-# copy the Gemfile to the image
-COPY Gemfile ./
+# copy the Gemfile and Gemfile.lock to the image
+COPY Gemfile Gemfile.lock ./
 
 # install jekyll and dependencies
 RUN gem install --no-document jekyll bundler && bundle install --no-cache

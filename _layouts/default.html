@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - {{ site.contact.name }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Curriculum Vitae - {{ site.contact.name }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <meta property="og:type" content="website">
+
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.min.css" crossorigin="anonymous"
         referrerpolicy="no-referrer" />
@@ -14,7 +23,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container" role="main">
         {% include contact.html %}
         <!-- {% include about.html %} -->
         {% include appointments.html %}
@@ -24,7 +33,7 @@
         {% include conferences.html %}
         {% include honors.html %}
         {% include footer.html %}
-    </div>
+    </main>
 </body>
 
 </html>

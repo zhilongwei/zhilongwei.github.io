@@ -98,11 +98,67 @@ ul {
 
 .footer-info {
     font-size: 0.8em;
-    color: #9c9b9b;
+    color: #595959;
     margin: 5px 0;
 }
 
 a.doi-link {
     word-break: break-all;      /* Breaks long words when needed */
     overflow-wrap: break-word;  /* Ensures the content wraps nicely */
+}
+
+/* -------------------------------------------------------------------------
+   Responsive Design for Small Screens & Mobile Devices
+   ------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+    body {
+        margin: 16px 10px;
+    }
+
+    .container {
+        padding: 16px 12px;
+    }
+
+    .flex-line {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .contact {
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+}
+
+/* -------------------------------------------------------------------------
+   Print Stylesheet for Clean PDF Export & Printing
+   ------------------------------------------------------------------------- */
+@media print {
+    body {
+        margin: 0;
+        background: white;
+        color: #000;
+        font-size: 11pt;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .section, li, .pub-item, .honor-entry {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 }
