@@ -1,15 +1,11 @@
 ---
 ---
-{% assign myname = site.scholar.apashort %}
-
-{% capture boldname %}<b>{{ myname }}</b>{% endcapture %}
-
 {% if (entry.type == 'inproceedings' or entry.type == 'conference') and entry.url %}
 <a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer">
-    {{ reference | replace_first: myname, boldname | safe }}
+    {{ reference | highlight_authors: entry }}
 </a>
 {% else %}
-{{ reference | replace_first: myname, boldname | safe }}
+{{ reference | highlight_authors: entry }}
 {% endif %}
 
 {% if entry.doi %}
