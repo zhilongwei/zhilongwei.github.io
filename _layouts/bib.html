@@ -5,7 +5,7 @@
 {% capture boldname %}<b>{{ myname }}</b>{% endcapture %}
 
 {% if (entry.type == 'inproceedings' or entry.type == 'conference') and entry.url %}
-<a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer" style="color: #1e90ff;">
+<a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer">
     {{ reference | replace_first: myname, boldname | safe }}
 </a>
 {% else %}
